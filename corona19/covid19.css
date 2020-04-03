@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: #2d2254;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.img {
+  width: 100%;
+  height: 20vh;
+  z-index: 333;
+  background: url("https://www.pon-cat.com/application/files/7915/8400/2602/home-banner.jpg");
+}
+.output{
+    z-index: 333;
+}
+.title{
+    position: relative;
+    color: #f5c42f;
+}
+
+.form-group{
+    margin: 0 20px;
+}
+.card{
+    margin: 0 20px;
+    color: #fff;
+    background: rgba(255,255,255,.4);
+}
+.card-footer{
+    color: #fff !important;
+}
+#name{
+    color: #f5c42f;
+    text-align: center;
+}
+
+.staysafe{
+	color: #f5c42f;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 8rem;
+	margin: 50px;
+	margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.content{
+    color: #f5c42f;
+}
+.play{
+	color: #f5c42f;
+	font-size: 4rem;
+}
+ul {
+	list-style: none;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	color: #fff;
+	border-radius: 20px;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+	background: rgba(255, 255,255, .2);
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+.info1{
+	background: #2980b9;
+}
+.info2{
+	background: #c0392b;
+}
+.info3{
+	background: #27ae60;
+}
+.section {
+	position: relative;
+	padding: 0 20px;
+}
+
+/* Section Top */
+.section-top {
+	min-height: 500px;
+	background: url('https://i.ibb.co/PhVR2Vh/bg1.png') no-repeat center center/cover;
+}
+
+.section-top h1 {
+	font-size: 70px;
+	line-height: 1.3;
+}
+
+.section-top .content {
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	width: 55%;
+}
+.secondary-text{
+    color: #f5c42f;
+}
+.txt{
+    color: #fff;
+}
+
+/* Section Stream */
+.section-stream {
+	min-height: 700px;
+	background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center center/cover;
+}
+
+.section-stream h2 {
+	font-size: 35px;
+}
+
+.section-stream .play {
+	width: 27%;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+.section-stream .content {
+	position: absolute;
+	width: 50%;
+	top: 130px;
+	right: 70px;
+}
+
+.section-stream .content > div, .section-grid > div {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+/* Section Grid */
+.section-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.section-grid p {
+	color: var(--text-color);
+}
+
+.section-grid .dot {
+	font-size: 40px;
+	padding-left: 2px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 700px) {
+	.section-top .content,
+	.section-stream .play,
+	.section-stream .content {
+		position: static;
+		width: 100%;
+	}
+
+	.section-top {
+		min-height: 200px;
+		padding-top: 20px;
+	}
+
+	.section-top .content {
+		text-align: center;
+	}
+
+	.section-top .content h1 {
+		font-size: 45px;
+	}
+
+	.section-stream {
+		min-height: 400px;
+	}
+
+	.section-stream .play {
+		width: 50%;
+		display: block;
+		margin: 30px auto;
+	}
+
+	.section-grid {
+		display: block;
+		margin-top: 0;
+	}
+	.staysafe{
+		color: #f5c42f;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2rem;
+		margin: 50px;
+		margin-bottom: 0;
+	}
+	.play{
+		color: #f5c42f;
+		font-size: 1rem;
+	}
+}
